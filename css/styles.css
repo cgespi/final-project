@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    font-size: 16pt;
+}
+
+b {
+    color: #FF5F5F;
+}
+
+a {
+    color: #FF9898;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FF5F5F;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+    background-image: url("../../img/bodybg.png");
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* BUTTONS */
+.buttons {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    font-size: 20pt;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+}
+
+.tickets {
+    background-color: #FF9898;
+}
+
+.tickets:hover {
+    background-color: white;
+    color: #FF5F5F;
+}
+
+.eventpage {
+    background-color: #FF5F5F;
+    color: white;
+}
+
+.eventpage:hover {
+    background-color: white;
+    color: #FF5F5F;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: white;
+    background-image: url("../../img/navbg.png");
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+nav > ul> li {
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav > ul > li > a:visited {
+    color: #FF7B7B;
+}
+
+header {
+    padding: 15px;
+    padding-left: 30px;
+}
+
+header > h1 {
+    display: inline-block;
+    font-family: 'Qwigley', cursive;
+    color: black;
+    font-size: 60pt;
+    margin-top: -10px;
+    padding-right: 30px;
+}
+
+header > h2 {
+    display: inline-block;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30pt;
+    margin-top: -10px;
+    color: #FF9898;
+}
+
+.logo {
+    float: left;
+    margin: -15px;
+    padding-right: 30px;
+}
+
+.logo > img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* HOMEPAGE HERO IMAGE */
+.homehero > img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MAIN CONTENT */
+h3 {
+    color: #FF5F5F;
+    font-size: 26pt;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.col {
+    width: 50%;
+}
+
+.col > img {
+    float: left;
+    max-width: 500px;
+    height: auto;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+#text {
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+p {
+    clear: both;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    color: #FF5F5F;
+    background-color: white;
+    background-image: url("../../img/navbg.png");
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer > p {
+    font-weight: 600;
+}
+
+footer > i {
+    letter-spacing: 20px;
+}
