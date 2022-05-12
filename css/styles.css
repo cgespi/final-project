@@ -4,7 +4,8 @@
 }
 
 b {
-    color: #FF5F5F;
+    color: #ff7b7b;
+    font-weight: 700;
 }
 
 a {
@@ -21,7 +22,8 @@ body {
     background-color: black;
     background-image: url("../../img/bodybg.png");
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 200;
 }
 
 /* BUTTONS */
@@ -29,22 +31,17 @@ body {
     text-align: center;
 }
 
-button {
-    margin: 10px;
+button, input[type=submit] {
+    margin: 20px 10px 0px 10px;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 20pt;
     border-radius: 8px;
     font-weight: 600;
-    width: 200px;
-    height: 50px;
+    padding: 10px 40px 10px 40px;
 }
 
-.tickets {
+.tickets, input[type=submit] {
     background-color: #FF9898;
-}
-
-.tickets:hover {
-    background-color: white;
-    color: #FF5F5F;
 }
 
 .eventpage {
@@ -52,7 +49,12 @@ button {
     color: white;
 }
 
-.eventpage:hover {
+.unavail {
+    background-color: #382d2d;
+    color: white;
+}
+
+.tickets:hover, .eventpage:hover, input[type=submit]:hover {
     background-color: white;
     color: #FF5F5F;
 }
@@ -72,22 +74,29 @@ nav > ul {
     list-style-type: none;
     float: right;
     margin-top: 35px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
 }
 
-nav > ul> li {
+nav > ul > li {
     display: inline-block;
     letter-spacing: 1px;
 }
 
 nav > ul > li > a {
     text-decoration: none;
-    padding: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
 }
 
 nav > ul > li > a:visited {
     color: #FF7B7B;
+}
+
+nav > ul > li > a:hover {
+    background-color: #FF5F5F;
+    color: white;
 }
 
 header {
@@ -95,21 +104,9 @@ header {
     padding-left: 30px;
 }
 
-header > h1 {
-    display: inline-block;
-    font-family: 'Qwigley', cursive;
-    color: black;
-    font-size: 60pt;
-    margin-top: -10px;
-    padding-right: 30px;
-}
-
-header > h2 {
-    display: inline-block;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 30pt;
-    margin-top: -10px;
-    color: #FF9898;
+header > a > img {
+    max-width: 500px;
+    margin: -10px;
 }
 
 .logo {
@@ -118,9 +115,14 @@ header > h2 {
     padding-right: 30px;
 }
 
-.logo > img {
+.logo > a > img {
     max-width: 100px;
     height: auto;
+}
+
+.titleimg {
+    max-height: 100px;
+    max-width: 550px;
 }
 
 /* HOMEPAGE HERO IMAGE */
@@ -129,16 +131,32 @@ header > h2 {
     height: auto;
 }
 
-/* MAIN CONTENT */
-h3 {
+/* MAIN CONTENT/HOMEPAGE */
+h1 {
     color: #FF5F5F;
     font-size: 26pt;
     margin: 0;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+h2 {
+    color: #FF5F5F;
+    font-size: 26pt;
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
 }
 
 .col {
     width: 50%;
+}
+
+.col > ul {
+    list-style-type: none;
 }
 
 .col > img {
@@ -147,16 +165,96 @@ h3 {
     height: auto;
     margin-left: 80px;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 #text {
     float: left;
     margin-top: 80px;
     margin-left: 30px;
+    margin-bottom: 100px;
 }
 
-p {
-    clear: both;
+/* WHAT'S INCLUDED LISTS */
+
+.pcol {
+    width: 50%;
+    float: left;
+    padding: 0;
+}
+
+.pcolb {
+    /* Negative margin to align text with .pcol */
+    float: left;
+    width: 50%;
+    margin-top: -2px;
+}
+
+/* ABOUT PAGE */
+.abouttxt {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 18px;
+    top: 150px;
+    left: 18%;
+    height: 450px;
+    width: 1000px;
+    padding: 20px 80px 20px 80px;
+}
+
+.abouttxt > h2 {
+    text-align: center;
+}
+
+/* GALLERY PAGE */
+.galleryframe {
+    margin: 20px auto 100px auto;
+    width: 50%;
+    height: auto;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}  
+
+/* CONTACT PAGE */
+
+.container {
+    text-align: center;
+    margin: 50px auto 50px auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.container > p {
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border-radius: 16px;
+    margin: 10px 5px 30px 0px;
+    border: 2px solid #ff9898;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 5px 0px 0px 10px;
+    min-height: 200px;
+    border: 2px solid #ff9898;
 }
 
 /* FOOTER */
@@ -175,6 +273,7 @@ footer > p {
     font-weight: 600;
 }
 
-footer > i {
+footer > a {
+    color: #FF5F5F;
     letter-spacing: 20px;
 }
