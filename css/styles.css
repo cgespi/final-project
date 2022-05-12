@@ -33,47 +33,49 @@ body {
 
 button, input[type=submit] {
     margin: 20px 10px 0px 10px;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 20pt;
+    font: 600 20pt 'Merriweather Sans', sans-serif;
     border-radius: 8px;
-    font-weight: 600;
-    padding: 10px 40px 10px 40px;
 }
 
 .tickets, input[type=submit] {
     background-color: #FF9898;
+    padding: 10px 75px 10px 75px;
 }
 
 .eventpage {
     background-color: #FF5F5F;
     color: white;
+    padding: 10px 40px 10px 40px;
 }
 
 .unavail {
     background-color: #382d2d;
     color: white;
+    padding: 10px 40px 10px 40px;
 }
 
 .tickets:hover, .eventpage:hover, input[type=submit]:hover {
-    background-color: white;
-    color: #FF5F5F;
+    /* background-color: white; */
+    /* color: #FF5F5F; */
+    color: black;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,152,152,1) 75%, rgba(255,95,95,1) 95%);
 }
 
 /* NAVBAR */
 
 nav {
-    background-color: white;
-    background-image: url("../../img/navbg.png");
-    height: 100px;
+    background: white url("../../img/navbg.png");
+    height: 120px;
     width: 100%;
     position: sticky;
     top: 0;
+    border-bottom: 5px solid #FF5F5F;
 }
 
 nav > ul {
     list-style-type: none;
     float: right;
-    margin-top: 35px;
+    margin-top: 45px;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 700;
 }
@@ -105,19 +107,8 @@ header {
 }
 
 header > a > img {
-    max-width: 500px;
+    max-width: 700px;
     margin: -10px;
-}
-
-.logo {
-    float: left;
-    margin: -15px;
-    padding-right: 30px;
-}
-
-.logo > a > img {
-    max-width: 100px;
-    height: auto;
 }
 
 .titleimg {
@@ -133,18 +124,19 @@ header > a > img {
 
 /* MAIN CONTENT/HOMEPAGE */
 h1 {
-    color: #FF5F5F;
-    font-size: 26pt;
     margin: 0;
-    letter-spacing: 2px;
-    font-weight: 800;
 }
 
-h2 {
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1, h2, h3 {
     color: #FF5F5F;
     font-size: 26pt;
-    margin: 0;
-    font-weight: 400;
+    letter-spacing: 2px;
+    font-weight: 800;
 }
 
 p {
@@ -153,10 +145,6 @@ p {
 
 .col {
     width: 50%;
-}
-
-.col > ul {
-    list-style-type: none;
 }
 
 .col > img {
@@ -191,19 +179,20 @@ p {
 }
 
 /* ABOUT PAGE */
-.abouttxt {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 18px;
-    top: 150px;
-    left: 18%;
-    height: 450px;
-    width: 1000px;
-    padding: 20px 80px 20px 80px;
+.abouttext {
+    clear: both;
+    margin: 900px 300px 100px 300px;
 }
 
-.abouttxt > h2 {
+.founderimg {
     text-align: center;
+    margin: 50px;
+}
+
+.founderimg > img {
+    max-width: 250px;
+    height: auto;
+    margin: 20px;
 }
 
 /* GALLERY PAGE */
@@ -212,22 +201,6 @@ p {
     width: 50%;
     height: auto;
 }
-
-.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.gallery:hover {
-    border: 1px solid #777;
-}  
 
 /* CONTACT PAGE */
 
@@ -266,7 +239,8 @@ footer {
     height: 100px;
     width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
+    border-top: 5px solid;
 }
 
 footer > p {
