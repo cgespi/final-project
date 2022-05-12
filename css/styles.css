@@ -24,6 +24,7 @@ body {
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 200;
+    line-height: 1.5;
 }
 
 /* BUTTONS */
@@ -111,11 +112,6 @@ header > a > img {
     margin: -10px;
 }
 
-.titleimg {
-    max-height: 100px;
-    max-width: 550px;
-}
-
 /* HOMEPAGE HERO IMAGE */
 .homehero > img {
     max-width: 100%;
@@ -135,7 +131,7 @@ h3 {
 h1, h2, h3 {
     color: #FF5F5F;
     font-size: 26pt;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 800;
 }
 
@@ -144,23 +140,19 @@ p {
 }
 
 .col {
-    width: 50%;
+    width: 55%;
 }
 
 .col > img {
     float: left;
     max-width: 500px;
     height: auto;
-    margin-left: 80px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 80px 0px 80px 80px;
 }
 
 #text {
     float: left;
-    margin-top: 80px;
-    margin-left: 30px;
-    margin-bottom: 100px;
+    margin: 80px 0px 120px 30px;
 }
 
 /* WHAT'S INCLUDED LISTS */
@@ -168,14 +160,6 @@ p {
 .pcol {
     width: 50%;
     float: left;
-    padding: 0;
-}
-
-.pcolb {
-    /* Negative margin to align text with .pcol */
-    float: left;
-    width: 50%;
-    margin-top: -2px;
 }
 
 /* ABOUT PAGE */
@@ -197,9 +181,9 @@ p {
 
 /* GALLERY PAGE */
 .galleryframe {
-    margin: 20px auto 100px auto;
+    margin: 20px auto 200px auto;
     width: 50%;
-    height: auto;
+    text-align: center;
 }
 
 /* CONTACT PAGE */
@@ -208,7 +192,6 @@ p {
     text-align: center;
     margin: 50px auto 50px auto;
     width: 40%;
-    padding: 10px;
 }
 
 .container > p {
@@ -217,7 +200,7 @@ p {
 
 input {
     padding: 10px;
-    border-radius: 16px;
+    border-radius: 8px;
     margin: 10px 5px 30px 0px;
     border: 2px solid #ff9898;
 }
@@ -228,6 +211,7 @@ textarea {
     padding: 5px 0px 0px 10px;
     min-height: 200px;
     border: 2px solid #ff9898;
+    border-radius: 8px;
 }
 
 /* FOOTER */
@@ -239,7 +223,7 @@ footer {
     height: 100px;
     width: 100%;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 0px 90px 0px;
     border-top: 5px solid;
 }
 
