@@ -20,7 +20,7 @@ a:hover{
 body {
     margin: 0px;
     background-color: black;
-    background-image: url("../../img/bodybg.png");
+    background-image: url("../img/bodybg.png");
     color: white;
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 200;
@@ -65,7 +65,7 @@ button, input[type=submit] {
 /* NAVBAR */
 
 nav {
-    background: white url("../../img/navbg.png");
+    background: white url("../img/navbg.png");
     height: 120px;
     width: 100%;
     position: sticky;
